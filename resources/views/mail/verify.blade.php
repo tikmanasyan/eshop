@@ -7,5 +7,5 @@
 </style>
 
 <div class="wrapper-verify">
-    <a href="">Active</a>
+    <a href="{{ route("verify", base64_encode($user['id'])) }}">Active</a>
 </div>

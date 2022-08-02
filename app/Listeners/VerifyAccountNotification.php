@@ -20,8 +20,7 @@ class VerifyAccountNotification
      */
     public function handle(VerifyAccount $event)
     {
-        $user = User::find($event['id']);
-        $user->update(['is_verify' => 1]);
-//        Mail::to($event->email)->send(new VerifyEmail($event));
+
+        Mail::to($event->user['email'])->send(new VerifyEmail($event->user));
     }
 }

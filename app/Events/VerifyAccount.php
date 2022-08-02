@@ -19,8 +19,7 @@ class VerifyAccount
      *
      * @return void
      */
-    public function __construct($user)
-    {
+    public function __construct($user) {
         $this->user = $user;
     }
 }

@@ -5,7 +5,7 @@
     <div class="wrapper-auth">
         <div class="login">
             <h2 class="mt-2 mb-2 text-center">Login Form</h2>
-            <form action="" method="post">
+            <form action="{{ route("login-store") }}" method="post">
                 @csrf
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
